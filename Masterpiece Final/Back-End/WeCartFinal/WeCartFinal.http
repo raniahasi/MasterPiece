@@ -1,0 +1,6 @@
+@WeCartFinal_HostAddress = http://localhost:5200
+
+GET {{WeCartFinal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <!-- Mirrored from tunatheme.com/tf/html/fiama-preview/fiama/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Sep 2024 12:05:13 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Account</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Place favicon.png in the root directory -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <!-- Font Icons css -->
+
+    <!-- plugins css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/cart js and css/css/style.css" />
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="/cart js and css/css/responsive.css" />
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/assests/css2/bootstrap.min.css"
+    />
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="/assests/css2/slick.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/assests/css2/slick-theme.css"
+    />
+
+    <!-- nouislider -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/assests/css2/nouislider.min.css"
+    />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Custom stylesheet -->
+    <link type="text/css" rel="stylesheet" href="/assests/css2/style.css" />
+    <!-- Font Awesome Icon -->
+    <link type="text/css" rel="stylesheet" href="/assests/css2/home.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+
+
+    <style>
+      button#proceedToCheckoutButton {
+        margin-top: 18%;
+        margin-right: 26%;
+      }
+
+      .liton__shopping-cart-area.mb-100 {
+        margin-top: 5%;
+      }
+
+      .col-lg-4 {
+        margin-top: 10%;
+      }
+
+      .col-lg-8 {
+        margin-top: 10%;
+      }
+      .table-responsive,
+      .myaccount-tab-content-inner {
+        overflow: hidden; /* Hides overflow, use with caution */
+      }
+
+      button.btn.theme-btn-1.btn-effect-1.text-uppercase {
+        background-color: #d10024;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div id="top-header">
+        <div class="container">
+          <ul class="header-links pull-left">
+            <li>
+              <a href="#"><i class="fa fa-phone"></i> +962772382250</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-envelope-o"></i> Info@WeCart.com</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-map-marker"></i> 21110 Irbid</a>
+            </li>
+          </ul>
+          <ul class="header-links pull-right">
+            <li>
+              <a href="#"><i class="fa fa-language"></i> EN/AR</a>
+            </li>
+            <li>
+              <a href="#" id="accountBtn"
+                ><i class="fa fa-user-o"></i>
+                <span id="accountText">My Account</span></a
+              >
+            </li>
+            <li id="logoutBtn" style="display: none">
+              <a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="header-logo">
+                <a href="#" class="logo">
+                  <img src="./img/logo.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6">
+             
+            </div>
+            <div class="col-md-3 clearfix">
+              <div class="header-ctn">
+                <div>
+                  
+                </div>
+                <div class="cart-icon">
+                  <a href="/user/shopping-cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>Your Cart</span>
+                    <div class="qty">0</div>
+                    <!-- Initially set to 0 or fetch from server -->
+                  </a>
+                </div>
+
+                <div class="menu-toggle">
+                  <a href="#">
+                    <i class="fa fa-bars"></i>
+                    <span>Menu</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- NAVIGATION -->
+    <nav id="navigation">
+      <div class="container">
+        <div id="responsive-nav">
+          <ul class="main-nav nav navbar-nav">
+            <li class="active"><a href="/user/home.html">Home</a></li>
+            <li><a href="/user/products.html">Categories</a></li>
+            <li><a href="/user/wishlist.html">Wishlist</a></li>
+
+            <li><a href="/Contactus/contact.html">Contact</a></li>
+            <li><a href="/Aboutus/about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /NAVIGATION -->
+
+    <!-- WISHLIST AREA START -->
+    <div class="liton__wishlist-area pb-50">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- PRODUCT TAB AREA START -->
+            <div class="ltn__product-tab-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div class="ltn__tab-menu-list mb-50">
+                      <div class="nav">
+                        <a
+                          class="active show"
+                          data-bs-toggle="tab"
+                          href="#liton_tab_1_1"
+                          >Dashboard <i class="fas fa-home"></i
+                        ></a>
+                        <a data-bs-toggle="tab" href="#liton_tab_1_2"
+                          >Orders <i class="fas fa-file-alt"></i
+                        ></a>
+                        <a data-bs-toggle="tab" href="#liton_tab_1_3"
+                          >Reset Password <i class="fas fa-arrow-down"></i
+                        ></a>
+                        <!-- <a data-bs-toggle="tab" href="#liton_tab_1_4">address <i
+                                                        class="fas fa-map-marker-alt"></i></a> -->
+                        <a data-bs-toggle="tab" href="#liton_tab_1_5"
+                          >Account Details <i class="fas fa-user"></i
+                        ></a>
+                        <a href="#" onclick="logoutUser()"
+                          >Logout <i class="fas fa-sign-out-alt"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8">
+                    <div class="tab-content">
+                      <div class="tab-pane fade active show" id="liton_tab_1_1">
+                        <div class="ltn__myaccount-tab-content-inner">
+                          <p>
+                            Hello From your account dashboard you can view your
+                            <span>recent orders</span>, manage your
+                            <span>shipping and billing addresses</span>, and
+                            <span>edit your password and account details</span>.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="liton_tab_1_2">
+                        <div class="ltn__myaccount-tab-content-inner">
+                          <div class="table-responsive">
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>Order</th>
+                                  <th>Date</th>
+                                  <th>Status</th>
+                                  <th>Total</th>
+                                  <th>Action</th>
+                                </tr>
+                              </thead>
+                              <tbody id="Orders"></tbody>
+                            </table>
+                          </div>
+                      
+
+                          <style>
+                            button:hover {
+                              transform: scale(1.1);
+                            }
+                          </style>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="liton_tab_1_3">
+                        <div class="ltn__myaccount-tab-content-inner">
+                          <div class="table-responsive">
+                            <fieldset>
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <label>Current password :</label>
+                                  <input
+                                    type="password"
+                                    id="CurrentPassword"
+                                    name="CurrentPassword"
+                                  />
+                                  <label>New password :</label>
+                                  <input
+                                    type="password"
+                                    id="NewPassword"
+                                    name="NewPassword"
+                                  />
+                                  <label>Confirm new password:</label>
+                                  <input
+                                    type="password"
+                                    id="ConfirmNewPassword"
+                                    name="ConfirmNewPassword"
+                                  />
+                                </div>
+                              </div>
+                            </fieldset>
+                            <div class="btn-wrapper">
+                              <button
+                                type="submit"
+                                onclick="changePassword(event);"
+                                class="btn theme-btn-1 btn-effect-1 text-uppercase"
+                              >
+                                Save Changes
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="liton_tab_1_5">
+                        <div class="ltn__myaccount-tab-content-inner mb-50">
+                          <p>
+                            The following addresses will be used on the checkout
+                            page by default.
+                          </p>
+                          <div class="ltn__form-box">
+                            <form action="#">
+                              <div class="row mb-50">
+                                <div class="col-md-6">
+                                  <label>First name:</label>
+                                  <input
+                                    type="text"
+                                    name="FirstName"
+                                    id="FirstName"
+                                  />
+                                </div>
+                                <div class="col-md-6">
+                                  <label>Last name:</label>
+                                  <input
+                                    type="text"
+                                    name="LastName"
+                                    id="LastName"
+                                  />
+                                </div>
+                                <div class="col-md-6">
+                                  <label>Phone number</label>
+                                  <input
+                                    type="text"
+                                    name="ltn__lastname"
+                                    id="PhoneNumber"
+                                  />
+                                </div>
+                                <div class="col-md-6">
+                                  <label> Email:</label>
+                                  <input
+  type="email"
+  name="ltn__lastname"
+  id="Email"
+  placeholder="example@example.com"
+  disabled
+/>
+                                </div>
+                              </div>
+
+                              <div class="btn-wrapper">
+                                <button
+                                  type="submit"
+                                  onclick="updateUserInfo(event);"
+                                  class="btn theme-btn-1 btn-effect-1 text-uppercase"
+                                >
+                                  Save Changes
+                                </button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- PRODUCT TAB AREA END -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- WISHLIST AREA START -->
+
+    <!-- NEWSLETTER -->
+    <div id="newsletter" class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="newsletter">
+              <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+              <form>
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="Enter Your Email"
+                />
+                <button class="newsletter-btn">
+                  <i class="fa fa-envelope"></i> Subscribe
+                </button>
+              </form>
+              <ul class="newsletter-follow">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /NEWSLETTER -->
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col payment-options">
+            <img
+              src="/assests/images/wecart.png"
+              alt="WeCart"
+              class="img-fluid"
+            />
+            <img
+              src="/assests/images/apple_pay.png"
+              alt="Apple Pay"
+              class="img-fluid"
+            />
+            <img
+              src="/assests/images/zelle.png"
+              alt="Zelle"
+              class="img-fluid"
+            />
+            <img src="/assests/images/cash.png" alt="Cash" class="img-fluid" />
+            <img
+              src="/assests/images/mastercard.png"
+              alt="MasterCard"
+              class="img-fluid"
+            />
+            <img src="/assests/images/visa.png" alt="Visa" class="img-fluid" />
+            <img
+              src="/assests/images/PayPal.png"
+              alt="PayPal"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <ul class="footer-links list-inline mt-3">
+          <li class="list-inline-item"><a href="index.html">Home Page</a></li>
+          <li class="list-inline-item"><a href="about.html">About Us</a></li>
+          <li class="list-inline-item"><a href="#">My Account</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#">Delivery</a></li>
+          <li class="list-inline-item"><a href="#">Refund</a></li>
+          <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- jQuery Plugins -->
+    <script src="js2/jquery.min.js"></script>
+    <script src="js2/bootstrap.min.js"></script>
+    <script src="js2/slick.min.js"></script>
+    <script src="js2/nouislider.min.js"></script>
+    <script src="js2/jquery.zoom.min.js"></script>
+    <script src="js2/main.js"></script>
+
+    <!-- All JS Plugins -->
+    <script src="js/plugins.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+    <script>
+      async function getData() {
+        const userId = localStorage.getItem("userId"); // Fetch userId from localStorage
+        if (!userId) {
+          console.error("No user ID found, make sure the user is logged in.");
+          return; // Exit the function if no userId is found
+        }
+
+        const url = `https://localhost:7159/api/Order/GetOrdersByUser/${userId}`;
+
+        try {
+          const response = await fetch(url);
+          const data = await response.json();
+
+          console.log("Fetched Data:", data); // Add this to check the fetched data in the console
+
+          let tableBody = document.getElementById("Orders");
+          tableBody.innerHTML = ""; // Clear existing content before adding rows
+          let counter = 1;
+          data.forEach((order) => {
+            tableBody.innerHTML += `
+            <tr>
+                <td>${counter++}</td>
+                <td>${order.date} </td>
+                <td><span class="badge ${getPaymentBadgeClass(order.status)}">${
+              order.status
+            }</span></td>
+                <td>${order.total.toFixed(2)} JD</td>
+                <td><a href="/User/Order Details.html" onclick="storeOrderId(${
+                  order.orderId
+                })">View</a></td>
+            </tr>
+            `;
+          });
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      }
+
+      function getPaymentBadgeClass(status) {
+        switch (status.toLowerCase()) {
+          case "completed":
+            return "text-success bg-light-success";
+          case "pending":
+            return "text-warning bg-light-warning";
+          case "shipped":
+            return "text-info bg-light-info";
+          case "cancelled":
+            return "text-danger bg-light-danger";
+          default:
+            return "text-secondary bg-light-secondary";
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", getData); // Ensure the function runs after the DOM is fully loaded
+
+      function storeOrderId(orderId) {
+        localStorage.setItem("orderId", orderId); // Store order ID in localStorage for later use
+      }
+
+      //--------------------------------------------------------------------------
+
+      async function getUserData() {
+        const userId = localStorage.getItem("userId"); // Get userId from local storage
+        if (!userId) {
+          console.error("User ID is not defined.");
+          return; // Exit the function if no userId is found
+        }
+
+        const url = `https://localhost:7159/api/Users/GetUserById/${userId}`;
+
+        try {
+          const response = await fetch(url);
+          if (!response.ok) {
+            throw new Error("Failed to fetch user data");
+          }
+          const user = await response.json();
+
+          if (user) {
+            var fullName = user.name;
+            var nameParts = fullName.split(" ");
+
+            document.getElementById("FirstName").value = nameParts[0];
+            document.getElementById("LastName").value = nameParts
+              .slice(1)
+              .join(" ");
+            document.getElementById("Email").value = user.email;
+            document.getElementById("PhoneNumber").value = user.phoneNumber;
+            document.getElementById("UserName1").innerText = user.name;
+          }
+        } catch (error) {
+          console.error("Error fetching user data:", error);
+        }
+      }
+
+      getUserData();
+
+      //---------------------------------------------------------------------------------
+
+      //Edit user info
+      //Edit user info
+      async function updateUserInfo(event) {
+        event.preventDefault(); // Prevent the default form submission behavior
+
+        const userId = localStorage.getItem("userId"); // Make sure this matches exactly in case and spelling
+        if (!userId) {
+          alert("User ID not found.");
+          return;
+        }
+
+        const url = `https://localhost:7159/api/Users/UpdateUser/${userId}`; // Use the correct userId
+
+        // Collect the form data
+        const firstName = document.getElementById("FirstName").value;
+        const lastName = document.getElementById("LastName").value;
+        const email = document.getElementById("Email").value;
+        const phoneNumber = document.getElementById("PhoneNumber").value;
+
+        // Create a FormData object
+        const formData = new FormData();
+        formData.append("name", `${firstName} ${lastName}`); // Match DTO property 'name'
+        formData.append("email", email); // Match DTO property 'email'
+        formData.append("phoneNumber", phoneNumber); // Match DTO property 'phoneNumber'
+
+        try {
+          // Send a PUT request with the FormData object
+          const response = await fetch(url, {
+            method: "PUT",
+            body: formData, // Send the FormData object
+          });
+
+          if (response.ok) {
+            // Successfully updated the user info
+            alert("User info updated successfully!");
+          } else {
+            // Handle errors from the server
+            const errorData = await response.json();
+            alert("Failed to update user info: " + errorData.message);
+          }
+        } catch (error) {
+          // Handle any errors that occur during the fetch request
+          console.error("Error:", error);
+          alert("An error occurred while updating user info.");
+        }
+      }
+
+      //change password
+      async function changePassword(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const userId = localStorage.getItem("userId"); // Fetch the userId from localStorage
+        if (!userId) {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "User not logged in or session expired.",
+          });
+          return;
+        }
+
+        const currentPassword =
+          document.getElementById("CurrentPassword").value;
+        const newPassword = document.getElementById("NewPassword").value;
+        const confirmNewPassword =
+          document.getElementById("ConfirmNewPassword").value;
+
+        if (!currentPassword || !newPassword || !confirmNewPassword) {
+          Swal.fire({
+            icon: "warning",
+            title: "Missing fields",
+            text: "Please fill in all fields.",
+          });
+          return;
+        }
+
+        if (newPassword !== confirmNewPassword) {
+          Swal.fire({
+            icon: "error",
+            title: "Mismatch",
+            text: "New password and confirmation do not match.",
+          });
+          return;
+        }
+
+        const url = "https://localhost:7159/api/Users/ChangePassword"; // Corrected API URL
+
+        const formData = new FormData();
+        formData.append("CurrentPassword", currentPassword);
+        formData.append("userId", userId);
+        formData.append("NewPassword", newPassword);
+        formData.append("ConfirmNewPassword", confirmNewPassword);
+
+        try {
+          const response = await fetch(url, {
+            method: "POST",
+            body: formData,
+          });
+
+          if (response.ok) {
+            Swal.fire({
+              icon: "success",
+              title: "Success!",
+              text: "Password changed successfully!",
+            });
+            document.getElementById("CurrentPassword").value = "";
+            document.getElementById("NewPassword").value = "";
+            document.getElementById("ConfirmNewPassword").value = "";
+          } else {
+            const errorData = await response.json();
+            Swal.fire({
+              icon: "error",
+              title: "Failed",
+              text: "Failed to change password: " + errorData.message,
+            });
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          Swal.fire({
+            icon: "error",
+            title: "Error",
+            text: "An error occurred while changing password.",
+          });
+        }
+      }
+
+      function downloadExcel() {
+        var table = document.getElementById("Orders");
+
+        var data = [];
+        var rows = table.querySelectorAll("tr");
+
+        rows.forEach(function (row) {
+          var rowData = [];
+          var cells = row.querySelectorAll("td, th");
+          cells.forEach(function (cell) {
+            rowData.push(cell.innerText);
+          });
+          data.push(rowData);
+        });
+
+        var ws = XLSX.utils.aoa_to_sheet(data);
+        var wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, ws, "Orders");
+
+        XLSX.writeFile(wb, "Orders.xlsx");
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+    const accountBtn = document.getElementById('accountBtn');
+    const accountText = document.getElementById('accountText');
+    const logoutBtn = document.getElementById('logoutBtn');
+    const username = localStorage.getItem('username');
+
+    if (username) {
+        // If logged in, update account text and link
+        accountText.textContent = username;
+        accountBtn.href = '/cart js and css/account.html';
+        // Display Logout Button
+        logoutBtn.style.display = 'inline-block'; // Make sure the logout button is visible
+        logoutBtn.querySelector('a').addEventListener('click', function(event) {
+            event.preventDefault();
+            localStorage.removeItem('username'); // Remove username from localStorage
+            window.location.href = '/user/home.html'; // Redirect to login page
+        });
+    } else {
+        // If not logged in, redirect to login page on account button click
+        accountBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = '/user/login&register.html';
+        });
+    }
+});
+
+
+
+function updateCartCount() {
+  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  const cartCount = cartItems.reduce((total, item) => total + item.Quantity, 0);
+  const cartCountElement = document.querySelector(".cart-icon .qty");
+
+  if (cartCountElement) {
+    cartCountElement.textContent = cartCount;
+  }
+}
+
+
+updateCartCount(); // Update cart count on page load
+    </script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/673c47174304e3196ae4e3a2/1id1nbd9c';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
+
+  </body>
+
+  <!-- Mirrored from tunatheme.com/tf/html/fiama-preview/fiama/account.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Sep 2024 12:04:48 GMT -->
+</html>

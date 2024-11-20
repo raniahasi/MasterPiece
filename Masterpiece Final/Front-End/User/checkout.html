@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/assests/css2/bootstrap.min.css"
+    />
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="/assests/css2/slick.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/assests/css2/slick-theme.css"
+    />
+
+    <!-- nouislider -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/assests/css2/nouislider.min.css"
+    />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Custom stylesheet -->
+    <link type="text/css" rel="stylesheet" href="/assests/css2/style.css" />
+    <!-- Font Awesome Icon -->
+    <link type="text/css" rel="stylesheet" href="/assests/css2/home.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <style>
+      .col-md-5.order-details {
+        margin-top: 5%;
+      }
+      .col-md-7 {
+        margin-top: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <!-- TOP HEADER -->
+      <div id="top-header">
+        <div class="container">
+          <ul class="header-links pull-left">
+            <li>
+              <a href="#"><i class="fa fa-phone"></i> +962772382250</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-envelope-o"></i> Info@WeCart.com</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-map-marker"></i> 21110 Irbid</a>
+            </li>
+          </ul>
+          <ul class="header-links pull-right">
+            <li>
+              <a href="#"><i class="fa fa-language"></i> EN/AR</a>
+            </li>
+            <li>
+              <a href="#" id="accountBtn"
+                ><i class="fa fa-user-o"></i>
+                <span id="accountText">My Account</span></a
+              >
+            </li>
+            <li id="logoutBtn" style="display: none">
+              <a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- /TOP HEADER -->
+
+      <!-- MAIN HEADER -->
+      <div id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="header-logo">
+                <a href="#" class="logo">
+                  <img src="/assests/img/logo.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-3 clearfix">
+              <div class="header-ctn">
+                <!-- <div>
+                  <a href="#">
+                    <i class="fa fa-heart-o"></i>
+                    <span>Your Wishlist</span>
+                    <div class="qty">2</div>
+                  </a>
+                </div> -->
+                <div class="cart-icon">
+                  <a href="shopping-cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>Your Cart</span>
+                    <div class="qty">0</div>
+                    <!-- Initially set to 0 or fetch from server -->
+                  </a>
+                </div>
+                <div class="menu-toggle">
+                  <a href="#">
+                    <i class="fa fa-bars"></i>
+                    <span>Menu</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /MAIN HEADER -->
+    </header>
+    <!-- /HEADER -->
+
+    <!-- NAVIGATION -->
+    <nav id="navigation">
+      <div class="container">
+        <div id="responsive-nav">
+          <ul class="main-nav nav navbar-nav">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="products.html">Categories</a></li>
+            <li><a href="/User/shopping-cart.html">Wishlist</a></li>
+            <li><a href="/product detail/product-detail.html">Reviews</a></li>
+            <li><a href="/Contactus/contact.html">Contact</a></li>
+            <li><a href="/Aboutus/about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /NAVIGATION -->
+
+    <!-- SECTION -->
+    <div class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-7">
+            <!-- Billing Details -->
+            <div class="billing-details">
+              <div class="section-title">
+                <h3 class="title">Billing address</h3>
+              </div>
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="text"
+                  name="first-name"
+                  placeholder="First Name"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="text"
+                  name="address"
+                  placeholder="Address"
+                />
+              </div>
+
+              <div class="form-group">
+                <input
+                  class="input"
+                  type="tel"
+                  name="tel"
+                  placeholder="Telephone"
+                />
+              </div>
+              <div class="form-group">
+                <div class="input-checkbox">
+                  
+                  <div class="caption">
+                    <p>Sign Up to complete payment</p>
+                    <input
+                      class="input"
+                      type="password"
+                      name="password"
+                      placeholder="Enter Your Password"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Billing Details -->
+          </div>
+
+          <!-- Order Details -->
+          <div class="col-md-5 order-details">
+            <div class="section-title text-center">
+              <h3 class="title">Your Order</h3>
+            </div>
+            <div class="order-summary">
+              <div class="order-col">
+                <div><strong>PRODUCT</strong></div>
+                <div><strong>TOTAL</strong></div>
+              </div>
+              <!-- Products will be dynamically inserted here -->
+              <div id="order-products" class="order-products">
+                <!-- Dynamic product entries will be here -->
+              </div>
+              <div class="order-col">
+                <div>Shipping</div>
+                <div><strong>5 JDS</strong></div>
+              </div>
+              <div class="order-col">
+                <div><strong>TOTAL</strong></div>
+                <div><strong class="order-total"></strong></div>
+                <!-- Total will be dynamically updated -->
+              </div>
+            </div>
+
+            <div class="payment-method">
+              <div class="input-radio">
+                <input
+                  type="radio"
+                  name="payment"
+                  id="payment-1"
+                  value="cash"
+                />
+                <label for="payment-1"><span></span>Cash On Delivery</label>
+              </div>
+              
+              <div class="input-radio">
+                <input
+                  type="radio"
+                  name="payment"
+                  id="payment-3"
+                  value="installments"
+                />
+                <label for="payment-3"><span></span>Wasleh Installments</label>
+              </div>
+            </div>
+            <div class="input-checkbox">
+              <input type="checkbox" id="terms" />
+              <label for="terms"
+                ><span></span>I've read and accept the
+                <a href="#">terms & conditions</a></label
+              >
+            </div>
+            <button
+              type="button"
+              class="primary-btn order-submit"
+              id="checkout-button"
+              onclick="handleOrder()"
+            >
+              Place order
+            </button>
+          </div>
+          <!-- /Order Details -->
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /SECTION -->
+
+    <!-- NEWSLETTER -->
+    <div id="newsletter" class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="newsletter">
+              <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+              <form>
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="Enter Your Email"
+                />
+                <button class="newsletter-btn">
+                  <i class="fa fa-envelope"></i> Subscribe
+                </button>
+              </form>
+              <ul class="newsletter-follow">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /NEWSLETTER -->
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col payment-options">
+            <img
+              src="/assests/images/wecart.png"
+              alt="WeCart"
+              class="img-fluid"
+            />
+            <img
+              src="/assests/images/apple_pay.png"
+              alt="Apple Pay"
+              class="img-fluid"
+            />
+            <img
+              src="/assests/images/zelle.png"
+              alt="Zelle"
+              class="img-fluid"
+            />
+            <img src="/assests/images/cash.png" alt="Cash" class="img-fluid" />
+            <img
+              src="/assests/images/mastercard.png"
+              alt="MasterCard"
+              class="img-fluid"
+            />
+            <img src="/assests/images/visa.png" alt="Visa" class="img-fluid" />
+            <img
+              src="/assests/images/PayPal.png"
+              alt="PayPal"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <ul class="footer-links list-inline mt-3">
+          <li class="list-inline-item"><a href="index.html">Home Page</a></li>
+          <li class="list-inline-item"><a href="about.html">About Us</a></li>
+          <li class="list-inline-item"><a href="#">My Account</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#">Delivery</a></li>
+          <li class="list-inline-item"><a href="#">Refund</a></li>
+          <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+
+	
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/673c47174304e3196ae4e3a2/1id1nbd9c';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+    <!-- jQuery Plugins -->
+    <script src="/assests/js2/jquery.min.js"></script>
+    <script src="/assests/js2/bootstrap.min.js"></script>
+    <script src="/assests/js2/slick.min.js"></script>
+    <script src="/assests/js2/nouislider.min.js"></script>
+    <script src="/assests/js2/jquery.zoom.min.js"></script>
+    <script src="/assests/js2/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkoutItems = JSON.parse(localStorage.getItem("checkoutItems")) || [];
+        const orderProductsElement = document.getElementById("order-products");
+        const orderTotalElement = document.querySelector(".order-total");
+    
+        if (checkoutItems.length === 0) {
+          orderProductsElement.innerHTML = '<div class="order-col"><div>No items in the cart.</div></div>';
+        } else {
+          let total = 0;
+          checkoutItems.forEach((item) => {
+            const productRow = `
+              <div class="order-col">
+                <div>${item.quantity}x ${item.name}</div>
+                <div>JD${item.subtotal}</div>
+              </div>
+            `;
+            orderProductsElement.innerHTML += productRow;
+            total += parseFloat(item.subtotal);
+          });
+          orderTotalElement.innerHTML = `${(total + 5).toFixed(2)} JD`; // Adding shipping cost
+        }
+      });
+    
+      // Function to handle the checkout process
+      // Function to handle the checkout process
+    function handleOrder() {
+      console.log("Handling order...");
+    
+      // Check if the user is logged in
+      const userId = localStorage.getItem("userId");
+      if (!userId) {
+        Swal.fire({
+          title: "Please log in",
+          text: "You need to be logged in to proceed to checkout.",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonText: "Log In",
+          cancelButtonText: "Cancel",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            localStorage.setItem("redirectTo", "checkout.html");
+            window.location.href = "login&register.html";
+          }
+        });
+        return;
+      }
+    
+      const selectedPaymentMethod = document.querySelector('input[name="payment"]:checked')?.value;
+      const termsChecked = document.getElementById("terms").checked;
+    
+      if (!selectedPaymentMethod) {
+        Swal.fire("Error", "Please select a payment method to proceed.", "error");
+        return;
+      }
+      if (!termsChecked) {
+        Swal.fire("Error", "Please agree to the terms and conditions to proceed.", "error");
+        return;
+      }
+    
+      // Fetch the checkout items from local storage
+      const checkoutItems = JSON.parse(localStorage.getItem("checkoutItems")) || [];
+      if (checkoutItems.length === 0) {
+        Swal.fire("Warning", "No items in the cart to proceed to checkout.", "warning");
+        return;
+      }
+    
+      // Collect billing details from form inputs
+      const billingDetails = {
+        firstName: document.querySelector('input[name="first-name"]').value,
+        email: document.querySelector('input[name="email"]').value,
+        address: document.querySelector('input[name="address"]').value,
+        telephone: document.querySelector('input[name="tel"]').value,
+      };
+    
+      if (!billingDetails.firstName || !billingDetails.email || !billingDetails.address || !billingDetails.telephone) {
+        Swal.fire("Error", "Please fill in all required billing details.", "error");
+        return;
+      }
+    
+      // Check if ProductId is defined for all items
+      const orderItems = checkoutItems.map(item => {
+        if (!item.ProductId) {
+          console.error("ProductId is undefined for item:", item);
+          throw new Error("ProductId is missing for one or more items in the cart.");
+        }
+        return {
+          ProductId: item.ProductId, // Ensure ProductId is properly assigned
+          Quantity: item.quantity || item.Quantity
+        };
+      });
+    
+      // Prepare the order object with the correct property names
+      const order = {
+        UserId: userId,
+        Amount: calculateTotalAmount(checkoutItems),
+        Name: billingDetails.firstName,
+        Address: billingDetails.address,
+        PhoneNumber: billingDetails.telephone,
+        Email: billingDetails.email,
+        Items: orderItems, // Use the corrected orderItems array
+        BillingDetails: billingDetails
+      };
+    
+      if (selectedPaymentMethod === "cash") {
+        processCashOrder(order);
+      } else {
+        Swal.fire("Info", "Selected payment method is not available at this time.", "info");
+      }
+    }
+    
+    // Helper function to calculate total amount
+    function calculateTotalAmount(items) {
+      return items.reduce((total, item) => total + parseFloat(item.subtotal || 0), 0);
+    }
+    
+    // Function to process the cash order
+    function processCashOrder(order) {
+      console.log("Processing cash order...", order);
+    
+      fetch("https://localhost:7159/api/Order/CreateOrder", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(order),
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Failed to place order.");
+          }
+          return response.json();
+        })
+        .then((result) => {
+          if (result.success) {
+            Swal.fire("Success", "Your order has been placed successfully.", "success").then(() => {
+              // Clear cart items from local storage
+              localStorage.removeItem("cartItems");
+              localStorage.removeItem("checkoutItems");
+    
+              // Clear cart items from the UI
+              clearCartItemsFromUI();
+    
+              // Refresh the current page
+              location.reload();
+            });
+          } else {
+            throw new Error(result.message || "Failed to place order.");
+          }
+        })
+        .catch((error) => {
+          console.error("Error placing order:", error);
+          Swal.fire("Error", error.message || "Failed to place order.", "error");
+        });
+    }
+    
+    // Function to clear cart items from the UI
+    function clearCartItemsFromUI() {
+      const cartItemsContainer = document.getElementById("cart-items-container");
+      if (cartItemsContainer) {
+        cartItemsContainer.innerHTML = '<tr><td colspan="6">Your cart is empty.</td></tr>';
+      }
+      document.getElementById("cart-subtotal").textContent = "JD0.00";
+      document.getElementById("order-total").textContent = "JD5.00"; // Only shipping cost remains
+    }
+    </script>
+    <script src="sharedjs.js"></script>
+  </body>
+</html>

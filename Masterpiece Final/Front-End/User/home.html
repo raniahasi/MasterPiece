@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
+		<link rel="icon" type="image/png" href="/assests/images/icons/favicon.png"/>
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="/assests/css2/bootstrap.min.css"/>
+	
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="/assests/css2/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="/assests/css2/slick-theme.css"/>
+	
+		<!-- nouislider -->
+		<link type="text/css" rel="stylesheet" href="/assests/css2/nouislider.min.css"/>
+	
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<!-- Custom stylesheet -->
+		<link type="text/css" rel="stylesheet" href="/assests/css2/style.css"/>
+	<!-- Font Awesome Icon -->
+    <link type="text/css" rel="stylesheet" href="/assests/css2/home.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	
+	
+	</head>
+	<body>
+		 <!-- HEADER -->
+		 <header>
+			<div id="top-header">
+			  <div class="container">
+				<ul class="header-links pull-left">
+				  <li>
+					<a href="#"><i class="fa fa-phone"></i> +962772382250</a>
+				  </li>
+				  <li>
+					<a href="#"><i class="fa fa-envelope-o"></i> Info@WeCart.com</a>
+				  </li>
+				  <li>
+					<a href="#"><i class="fa fa-map-marker"></i> 21110 Irbid</a>
+				  </li>
+				</ul>
+				<ul class="header-links pull-right">
+				  <li>
+					<a href="#"><i class="fa fa-language"></i> EN/AR</a>
+				  </li>
+				  <li>
+					<a href="#" id="accountBtn"
+					  ><i class="fa fa-user-o"></i>
+					  <span id="accountText">My Account</span></a
+					>
+				  </li>
+				  <li id="logoutBtn" style="display: none">
+					<a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<div id="header">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-3">
+					<div class="header-logo">
+					  <a href="#" class="logo">
+						<img src="/assests/img/logo.png" alt="" />
+					  </a>
+					</div>
+				  </div>
+				  <div class="col-md-6">
+					
+				  </div>
+				  <div class="col-md-3 clearfix">
+					<div class="header-ctn">
+					 
+					  <div class="cart-icon">
+						<a href="shopping-cart.html">
+						  <i class="fa fa-shopping-cart"></i>
+						  <span>Your Cart</span>
+						  <div class="qty">0</div>
+						  <!-- Initially set to 0 or fetch from server -->
+						</a>
+					  </div>
+	  
+					  <div class="menu-toggle">
+						<a href="#">
+						  <i class="fa fa-bars"></i>
+						  <span>Menu</span>
+						</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </header>
+		  <!-- /HEADER -->
+	  
+		 <!-- NAVIGATION -->
+			  <nav id="navigation">
+				  <div class="container">
+					  <div id="responsive-nav">
+						  <ul class="main-nav nav navbar-nav">
+							  <li class="active"><a href="home.html">Home</a></li>
+							  <li><a href="products.html">Categories</a></li>
+							  <!-- <li><a href="wishlist.html">Wishlist</a></li> -->
+							  
+							  <li><a href="/contactus/contact.html">Contact</a></li>
+							  <li><a href="/Aboutus/about.html">About</a></li>
+							  <li><a href="builder.html">Pc Builder</a></li>
+						  </ul>
+					  </div>
+				  </div>
+			  </nav>
+			  <!-- /NAVIGATION -->
+
+
+        <!-- HOT DEAL SECTION -->
+		<div id="hot-deal" class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="hot-deal">
+							<ul class="hot-deal-countdown">
+								<li>
+									<div>
+										<h3>02</h3>
+										<span>Days</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>10</h3>
+										<span>Hours</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>34</h3>
+										<span>Mins</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>60</h3>
+										<span>Secs</span>
+									</div>
+								</li>
+							</ul>
+							<h2 class="text-uppercase">hot deal this week</h2>
+							<p>New Collection Up to 50% OFF</p>
+							<a class="primary-btn cta-btn" href="#">Shop now</a>
+						</div>
+					</div>
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /HOT DEAL SECTION -->
+
+    <!--main content-->
+    <div class="container mt-5" style="margin-top: 8%; margin-bottom: 20%;">
+        <h2 style="text-align: center; margin-bottom: 8%; font-size:large ;">Categories</h2>
+        <div id="categoryCards" class="row" >
+            <!-- Dynamic categories will be inserted here -->
+        </div>
+    </div>
+    
+
+
+
+<!-- SECTION: New Products -->
+<div class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title">
+                    <h3 class="title" style="font-size: small; color: #888888ad; font-weight: 100;">New Products</h3>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="products-tabs">
+                        <div id="tab1" class="tab-pane active">
+                            <div class="products-slick" data-nav="#slick-nav-1" id="new-products-list">
+                                <!-- New products will be dynamically inserted here -->
+                            </div>
+                            <div id="slick-nav-1" class="products-slick-nav"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /SECTION -->
+
+
+
+
+
+
+
+    <!-- NEWSLETTER -->
+    <div id="newsletter" class="section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="newsletter">
+                        <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+                        <form>
+                            <input class="input" type="email" placeholder="Enter Your Email">
+                            <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+                        </form>
+                        <ul class="newsletter-follow">
+                            <li>
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /NEWSLETTER -->
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col payment-options">
+                <img src="/assests/images/wecart.png" alt="WeCart" class="img-fluid">
+                <img src="/assests/images/apple_pay.png" alt="Apple Pay" class="img-fluid">
+                <img src="/assests/images/zelle.png" alt="Zelle" class="img-fluid">
+                <img src="/assests/images/cash.png" alt="Cash" class="img-fluid">
+                <img src="/assests/images/mastercard.png" alt="MasterCard" class="img-fluid">
+                <img src="/assests/images/visa.png" alt="Visa" class="img-fluid">
+                <img src="/assests/images/PayPal.png" alt="PayPal" class="img-fluid">
+            </div>
+        </div>
+        <ul class="footer-links list-inline mt-3">
+            <li class="list-inline-item"><a href="index.html">Home Page</a></li>
+            <li class="list-inline-item"><a href="about.html">About Us</a></li>
+			<li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            <li class="list-inline-item"><a href="#">Delivery</a></li>
+            <li class="list-inline-item"><a href="#">Refund</a></li>
+            <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+        </ul>
+    </div>
+</footer>
+<!-- /FOOTER -->
+
+
+
+<!-- jQuery Plugins -->
+<script src="/assests/js2/jquery.min.js"></script>
+		<script src="/assests/js2/bootstrap.min.js"></script>
+		<script src="/assests/js2/slick.min.js"></script>
+		<script src="/assests/js2/nouislider.min.js"></script>
+		<script src="/assests/js2/jquery.zoom.min.js"></script>
+		<script src="/assests/js2/main.js"></script>
+
+</body>
+
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/673c47174304e3196ae4e3a2/1id1nbd9c';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
+<script src="home.js"></script>
+<script src="sharedjs.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Details</title>
+
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="css2/bootstrap.min.css" />
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="css2/slick.css" />
+    <link type="text/css" rel="stylesheet" href="css2/slick-theme.css" />
+
+    <!-- nouislider -->
+    <link type="text/css" rel="stylesheet" href="css2/nouislider.min.css" />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Custom stylesheet -->
+    <link type="text/css" rel="stylesheet" href="css2/style.css" />
+
+  
+    <style>
+      #header {
+        background-color: #222;
+      }
+      #top-header {
+        background-color: #222;
+      }
+      .main .categories .category img {
+        border-radius: 10px;
+      }
+      footer {
+        background-color: #222;
+        color: white;
+        padding-top: 80px;
+      }
+      .bg-dark {
+        background-color: #222 !important;
+      }
+      footer .payment-options img {
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+      }
+      footer .footer-links {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+      footer .footer-links li {
+        display: inline;
+        margin: 0 10px;
+      }
+      footer .footer-links li a {
+        text-decoration: none;
+        color: white;
+      }
+      .col-md-9 {
+        font-size: smaller;
+      }
+      #navbarNav {
+        font-size: smaller;
+      }
+      .cart {
+        width: 40px;
+        height: 40px;
+      }
+      .category-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .category-item img {
+        width: 60%;
+        height: 195px;
+        object-fit: cover;
+      }
+      .category-item p {
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size: small;
+        color: #545454;
+      }
+      .mb-5 {
+        font-size: 15px;
+        color: #323131de;
+        display: flex;
+        margin-top: -80px;
+        justify-content: center;
+        font-family: Poppins-Medium;
+      }
+      .links {
+        color: #383838;
+      }
+      .main-content {
+        margin-top: 150px;
+      }
+      button.add-to-cart-btn {
+        margin-top: 19%;
+        margin-left: -12%;
+}
+      
+    </style>
+  </head>
+  <body>
+  <!-- HEADER -->
+  <header>
+    <div id="top-header">
+      <div class="container">
+      <ul class="header-links pull-left">
+        <li>
+        <a href="#"><i class="fa fa-phone"></i> +962772382250</a>
+        </li>
+        <li>
+        <a href="#"><i class="fa fa-envelope-o"></i> Info@WeCart.com</a>
+        </li>
+        <li>
+        <a href="#"><i class="fa fa-map-marker"></i> 21110 Irbid</a>
+        </li>
+      </ul>
+      <ul class="header-links pull-right">
+        <li>
+        <a href="#"><i class="fa fa-language"></i> EN/AR</a>
+        </li>
+        <li>
+        <a href="#" id="accountBtn"
+          ><i class="fa fa-user-o"></i>
+          <span id="accountText">My Account</span></a
+        >
+        </li>
+        <li id="logoutBtn" style="display: none">
+        <a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+        </li>
+      </ul>
+      </div>
+    </div>
+    <div id="header">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+        <div class="header-logo">
+          <a href="#" class="logo">
+          <img src="./img/logo.png" alt="" />
+          </a>
+        </div>
+        </div>
+        <div class="col-md-6">
+        
+        </div>
+        <div class="col-md-3 clearfix">
+        <div class="header-ctn">
+          <!-- <div>
+          <a href="wishlist.html">
+            <i class="fa fa-heart-o"></i>
+            <span>Your Wishlist</span>
+            <div class="qty">2</div>
+          </a>
+          </div> -->
+          <div class="cart-icon">
+          <a href="/user/shopping-cart.html">
+            <i class="fa fa-shopping-cart"></i>
+            <span>Your Cart</span>
+            <div class="qty">0</div>
+            <!-- Initially set to 0 or fetch from server -->
+          </a>
+          </div>
+  
+          <div class="menu-toggle">
+          <a href="#">
+            <i class="fa fa-bars"></i>
+            <span>Menu</span>
+          </a>
+          </div>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </header>
+    <!-- /HEADER -->
+  
+   <!-- NAVIGATION -->
+      <nav id="navigation">
+        <div class="container">
+          <div id="responsive-nav">
+            <ul class="main-nav nav navbar-nav">
+              <li class="active"><a href="/user/home.html">Home</a></li>
+              <li><a href="products.html">Categories</a></li>
+              <!-- <li><a href="wishlist.html">Wishlist</a></li> -->
+              
+              <li><a href="/contactus/contact.html">Contact</a></li>
+              <li><a href="/Aboutus/about.html">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- /NAVIGATION -->
+
+    
+
+    <!-- SECTION -->
+    <div class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <!-- Product main img -->
+          <div class="col-md-5 col-md-push-2">
+            <div id="product-main-img">
+              <div class="product-preview">
+                <img id="main-image" src="" alt="Product Image" />
+              </div>
+
+              
+            </div>
+          </div>
+          <!-- /Product main img -->
+
+          <div class="col-md-2 col-md-pull-5">
+           
+          </div>
+         
+
+          <!-- Product details -->
+          <div class="col-md-5">
+            <div class="product-details">
+              <h2 class="product-name" id="product-name"></h2>
+              <div>
+                
+                
+              </div>
+              <div>
+                <!-- <h3 class="product-price">
+                  JD980.00 <del class="product-old-price">JD990.00</del>
+                </h3> -->
+
+                <h3 class="product-price" id="product-price"></h3>
+                
+                <span class="product-available">In Stock</span>
+              </div>
+
+              <div id="product-description"> <ul>
+                
+              </div>
+             
+              
+							<div class="add-to-cart">
+								<div class="qty-label">
+								
+									<div class="input-number">
+									
+									</div>
+								</div>
+								<button id =addcart class="add-to-cart-btn" ><i class="fa fa-shopping-cart"></i> add to cart</button>
+							</div>
+
+
+							
+              
+
+              
+            </div>
+          </div>
+          <!-- /Product details -->
+
+         <!-- Product tab -->
+<div class="col-md-12">
+  <div id="product-tab">
+      <!-- product tab nav -->
+      <ul class="tab-nav">
+          <li><a data-toggle="tab" href="#tab3">Reviews</a></li>
+      </ul>
+      <!-- /product tab nav -->
+
+      <!-- product tab content -->
+      <div class="tab-content">
+          <!-- tab1  -->
+     
+
+          <!-- tab2  -->
+          <div id="tab2" class="tab-pane fade in">
+              <div class="row">
+                  <div class="col-md-12">
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing
+                          elit, sed do eiusmod tempor incididunt ut labore et
+                          dolore magna aliqua. Ut enim ad minim veniam, quis
+                          nostrud exercitation ullamco laboris nisi ut aliquip ex
+                          ea commodo consequat. Duis aute irure dolor in
+                          reprehenderit in voluptate velit esse cillum dolore eu
+                          fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                          non proident, sunt in culpa qui officia deserunt mollit
+                          anim id est laborum.
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <!-- /tab2  -->
+
+          <!-- tab3  -->
+          <div id="tab3" class="tab-pane fade in">
+              <div class="row">
+                  <!-- Reviews -->
+                  <div class="col-md-9">
+                      <div id="reviews">
+                          <ul class="reviews" id="review-list">
+                              <!-- Reviews will be populated here by JavaScript -->
+                          </ul>
+                          <ul class="reviews-pagination">
+                              <!-- Pagination if needed -->
+                          </ul>
+                      </div>
+                  </div>
+                  <!-- /Reviews -->
+
+                  <!-- Review Form -->
+                  <div class="col-md-3" id="review-form">
+                      <form class="review-form" id="reviewForm">
+                          <textarea class="input" placeholder="Your Review" id="reviewText"></textarea>
+                          <div class="input-rating">
+                              
+                          </div>
+                          <button type="submit" class="primary-btn">Submit</button>
+                      </form>
+                  </div>
+                  <!-- /Review Form -->
+              </div>
+          </div>
+          <!-- /tab3  -->
+      </div>
+      <!-- /product tab content  -->
+  </div>
+</div>
+<!-- /Product tab -->
+
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /SECTION -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- NEWSLETTER -->
+    <div id="newsletter" class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="newsletter">
+              <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+              <form>
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="Enter Your Email"
+                />
+                <button class="newsletter-btn">
+                  <i class="fa fa-envelope"></i> Subscribe
+                </button>
+              </form>
+              <ul class="newsletter-follow">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /NEWSLETTER -->
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col payment-options">
+            <img src="images/wecart.png" alt="WeCart" class="img-fluid" />
+            <img src="images/apple_pay.png" alt="Apple Pay" class="img-fluid" />
+            <img src="images/zelle.png" alt="Zelle" class="img-fluid" />
+            <img src="images/cash.png" alt="Cash" class="img-fluid" />
+            <img
+              src="images/mastercard.png"
+              alt="MasterCard"
+              class="img-fluid"
+            />
+            <img src="images/visa.png" alt="Visa" class="img-fluid" />
+            <img src="images/PayPal.png" alt="PayPal" class="img-fluid" />
+          </div>
+        </div>
+        <ul class="footer-links list-inline mt-3">
+          <li class="list-inline-item"><a href="#">Home Page</a></li>
+          <li class="list-inline-item"><a href="#">About Us</a></li>
+          <li class="list-inline-item"><a href="#">My Account</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#">Delivery</a></li>
+          <li class="list-inline-item"><a href="#">Refund</a></li>
+          <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+  
+ 
+    <!-- jQuery Plugins -->
+    <script src="js2/jquery.min.js"></script>
+    <script src="js2/bootstrap.min.js"></script>
+    <script src="js2/slick.min.js"></script>
+    <script src="js2/nouislider.min.js"></script>
+    <script src="js2/jquery.zoom.min.js"></script>
+    <script src="js2/main.js"></script>
+
+
+
+    <script>
+    
+    // Fetch details for a specific product and update the UI accordingly
+// JavaScript for fetching product details and updating UI
+function fetchProductDetails(productId) {
+    fetch(`https://localhost:7159/api/Products/${productId}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch product details');
+            }
+            return response.json();
+        })
+        .then(product => {
+            // Image and product information updates
+            const imgElement = document.querySelector('#product-main-img .slick-slide img');
+            imgElement.src = `https://localhost:7159${product.image}`;
+            $('#product-main-img').slick('setPosition');
+
+            document.getElementById('product-name').textContent = product.name;
+            document.getElementById('product-price').innerHTML = `JD${product.price.toFixed(2)}`;
+            document.getElementById('product-description').innerHTML = product.description;
+
+            // Update all "Add to Cart" buttons
+            document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+                button.onclick = () => addToCart(product.productId, product.name, product.price, `https://localhost:7159${product.image}`);
+            });
+        })
+        .catch(error => console.error('Error loading product details:', error));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const productId = localStorage.getItem('selectedProductId');
+    if (productId) {
+        fetchProductDetails(productId);
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const productId = localStorage.getItem('selectedProductId');
+    if (productId) {
+        fetchProductDetails(productId);
+    }
+});
+
+
+</script>
+
+
+
+
+ 
+
+
+
+
+  <script>
+    updateBreadcrumb(); // Update breadcrumb on page load
+    function updateBreadcrumb() {
+      const categoryName = localStorage.getItem("selectedCategoryName");
+      const breadcrumbTree = document.querySelector(".breadcrumb-tree");
+      if (categoryName) {
+        breadcrumbTree.innerHTML = `
+                <li><a href="/User/home.html">Home</a></li>
+                <li><a href="/User/products.html"> Categories</a></li>
+                <li class="active">${categoryName}</li>
+                
+
+            `;
+      }
+    }</script>
+
+
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+  // Retrieve the product ID from localStorage
+  const productId = localStorage.getItem("selectedProductId");
+  console.log("Product ID:", productId); // Debugging: Log the product ID
+
+  const reviewForm = document.getElementById("reviewForm");
+  const reviewList = document.getElementById("review-list");
+
+  // Function to fetch reviews and display them
+  function fetchReviews() {
+    fetch(`https://localhost:7159/api/Products/${productId}/comments`)
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Failed to load reviews");
+        }
+      })
+      .then((data) => {
+        if (data.length === 0) {
+          reviewList.innerHTML = "<p>No reviews yet.</p>";
+        } else {
+          reviewList.innerHTML = data
+            .map(
+              (review) => `
+            <li>
+              <div class="review-heading">
+                <h5 class="name">${review.userName}</h5>
+                <p class="date">${new Date(review.date).toLocaleString()}</p>
+              </div>
+              <div class="review-body">
+                <p>${review.comment1}</p>
+              </div>
+            </li>
+          `
+            )
+            .join("");
+        }
+      })
+      .catch((error) => {
+        console.error("Error loading reviews:", error);
+        reviewList.innerHTML = `<p>No Reviews yet. </p>`;
+      });
+  }
+
+  // Function to submit a new review
+  reviewForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+    const reviewText = document.getElementById("reviewText").value;
+    const userId = localStorage.getItem("userId");
+
+    // Debugging: Log the values being sent
+    console.log("User ID:", userId);
+    console.log("Product ID:", productId);
+    console.log("Review Text:", reviewText);
+
+    // Prepare the review data
+    const reviewData = {
+      userId: parseInt(userId), // Ensure the userId is an integer
+      productId: productId, // Use the dynamically fetched product ID
+      comment1: reviewText,
+      rating: null, // Set to null since there's no rating
+    };
+
+    fetch(`https://localhost:7159/api/Products/${productId}/comment`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(reviewData),
+    })
+      .then((response) => {
+        if (response.ok) {
+          fetchReviews(); // Refresh the list of reviews
+          reviewForm.reset(); // Reset the form fields
+          alert("Review submitted successfully!");
+        } else {
+          return response.json().then((data) => {
+            throw new Error(data.message || "Failed to submit review");
+          });
+        }
+      })
+      .catch((error) => {
+        console.error("Error submitting review:", error);
+        alert(`Failed to submit review: ${error.message}`);
+      });
+  });
+
+  // Initially fetch reviews on page load
+  fetchReviews();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const accountBtn = document.getElementById('accountBtn');
+    const accountText = document.getElementById('accountText');
+    const logoutBtn = document.getElementById('logoutBtn');
+    const username = localStorage.getItem('username');
+
+    if (username) {
+        // If logged in, update account text and link
+        accountText.textContent = username;
+        accountBtn.href = '/cart js and css/account.html';
+        // Display Logout Button
+        logoutBtn.style.display = 'inline-block'; // Make sure the logout button is visible
+        logoutBtn.querySelector('a').addEventListener('click', function(event) {
+            event.preventDefault();
+            localStorage.removeItem('username'); // Remove username from localStorage
+            window.location.href = '/user/home.html'; // Redirect to login page
+        });
+    } else {
+        // If not logged in, redirect to login page on account button click
+        accountBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = '/user/login&register.html';
+        });
+    }
+});
+
+
+  
+  // Function to update the cart count
+  
+
+
+
+
+  function addToCart(productId, name, price, imageUrl) {
+    // Check if cart items already exist in local storage
+    const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  
+    // Check if the product is already in the cart
+    const existingItem = cartItems.find((item) => item.ProductId === productId);
+    if (existingItem) {
+      // Increase the quantity if the item already exists in the cart
+      existingItem.Quantity += 1;
+    } else {
+      // Add the new product to the cart
+      cartItems.push({
+        ProductId: productId,
+        Name: name,
+        Price: price,
+        ImageUrl: imageUrl,
+        Quantity: 1,
+      });
+    }
+  
+    // Save updated cart items to local storage
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  
+    // Show a success message
+    Swal.fire("Item added to cart successfully!", "", "success");
+  
+    // Update the cart count (if you have a function to do this)
+    updateCartCount();
+  }
+  
+  // Function to update the cart count
+  function updateCartCount() {
+    const userId = localStorage.getItem("userId");
+    if (!userId) return;
+  
+    fetch(`https://localhost:7159/api/Cart/GetCartItemCount/${userId}`)
+      .then((response) => response.json())
+      .then((count) => {
+        const cartCountElement = document.querySelector(".cart-icon .qty");
+        if (cartCountElement) {
+          cartCountElement.textContent = count; // Update the displayed count
+        }
+      })
+      .catch((error) => console.error("Error fetching cart count:", error));
+  }
+  
+  // Initial fetch of products
+  document.addEventListener("DOMContentLoaded", function () {
+    updateCartCount(); // Update the cart count on page load
+  });
+
+  updateCartCount(); // Update cart count on page load
+
+
+  function updateCartCount() {
+  const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+  const cartCount = cartItems.reduce((total, item) => total + item.Quantity, 0);
+  const cartCountElement = document.querySelector(".cart-icon .qty");
+
+  if (cartCountElement) {
+    cartCountElement.textContent = cartCount;
+  }
+}
+
+
+
+
+
+
+ </script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/673c47174304e3196ae4e3a2/1id1nbd9c';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
+	</script>
+	<!--End of Tawk.to Script-->
+
+ <!-- <script src="/User/home.js"></script>
+
+
+<script src="/User/sharedjs.js"></script> -->
+
+
+
+  </body>
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+  <!-- Mirrored from tunatheme.com/tf/html/fiama-preview/fiama/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Sep 2024 12:05:13 GMT -->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Cart</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Place favicon.png in the root directory -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <!-- Font Icons css -->
+
+    <!-- plugins css -->
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/cart js and css/css/style.css" />
+
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="/cart js and css/css/responsive.css" />
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/assests/css2/bootstrap.min.css"
+    />
+
+    <!-- Slick -->
+    <link type="text/css" rel="stylesheet" href="/assests/css2/slick.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/assests/css2/slick-theme.css"
+    />
+
+    <!-- nouislider -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="/assests/css2/nouislider.min.css"
+    />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Custom stylesheet -->
+    <link type="text/css" rel="stylesheet" href="/assests/css2/style.css" />
+    <!-- Font Awesome Icon -->
+    <link type="text/css" rel="stylesheet" href="/assests/css2/home.css" />
+
+    <style>
+      button#proceedToCheckoutButton {
+        margin-top: 18%;
+        margin-right: 26%;
+      }
+
+      .liton__shopping-cart-area.mb-100 {
+        margin-top: 5%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div id="top-header">
+        <div class="container">
+          <ul class="header-links pull-left">
+            <li>
+              <a href="#"><i class="fa fa-phone"></i> +962772382250</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-envelope-o"></i> Info@WeCart.com</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-map-marker"></i> 21110 Irbid</a>
+            </li>
+          </ul>
+          <ul class="header-links pull-right">
+            <li>
+              <a href="#"><i class="fa fa-language"></i> EN/AR</a>
+            </li>
+            <li>
+              <a href="#" id="accountBtn"
+                ><i class="fa fa-user-o"></i>
+                <span id="accountText">My Account</span></a
+              >
+            </li>
+            <li id="logoutBtn" style="display: none">
+              <a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="header-logo">
+                <a href="#" class="logo">
+                  <img src="/assests/img/logo.png" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="col-md-6">
+              
+            </div>
+            <div class="col-md-3 clearfix">
+              <div class="header-ctn">
+                <!-- <div>
+                <a href="#">
+                  <i class="fa fa-heart-o"></i>
+                  <span>Your Wishlist</span>
+                  <div class="qty">2</div>
+                </a>
+              </div> -->
+                <div class="cart-icon">
+                  <a href="shopping-cart.html">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>Your Cart</span>
+                    <div class="qty">0</div>
+                    <!-- Initially set to 0 or fetch from server -->
+                  </a>
+                </div>
+
+                <div class="menu-toggle">
+                  <a href="#">
+                    <i class="fa fa-bars"></i>
+                    <span>Menu</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- NAVIGATION -->
+    <nav id="navigation">
+      <div class="container">
+        <div id="responsive-nav">
+          <ul class="main-nav nav navbar-nav">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="products.html">Categories</a></li>
+            <!-- <li><a href="wishlist.html">Wishlist</a></li> -->
+
+            <li><a href="/Contactus/contact.html">Contact</a></li>
+            <li><a href="/Aboutus/about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /NAVIGATION -->
+
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+    <!-- Body main wrapper start -->
+    <div class="body-wrapper">
+      <!-- Utilize Cart Menu Start -->
+      <div
+        id="ltn__utilize-cart-menu"
+        class="ltn__utilize ltn__utilize-cart-menu"
+      >
+        <div class="ltn__utilize-menu-inner ltn__scrollbar">
+          <div class="ltn__utilize-menu-head">
+            <span class="ltn__utilize-menu-title">Cart</span>
+            <button class="ltn__utilize-close">×</button>
+          </div>
+          <div
+            class="mini-cart-product-area ltn__scrollbar"
+            id="miniCart"
+          ></div>
+          <div class="mini-cart-footer">
+            <div class="mini-cart-sub-total">
+              <h5>Subtotal: <span id="subtotalMINICART"></span></h5>
+            </div>
+            <div class="btn-wrapper">
+              <a
+                href="../FawarehWork/cart.html"
+                class="theme-btn-1 btn btn-effect-1"
+                >View Cart</a
+              >
+              <a
+                href="#"
+                onclick="proceedToCheckoutNAVCART()"
+                class="theme-btn-2 btn btn-effect-2"
+                >Checkout</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Utilize Cart Menu End -->
+
+      <div class="ltn__utilize-overlay"></div>
+
+      <!-- BREADCRUMB AREA START -->
+      <!-- <div class="ltn__breadcrumb-area ltn__breadcrumb-area-4 ltn__breadcrumb-color-white---">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ltn__breadcrumb-inner text-center">
+                       
+                        <div class="ltn__breadcrumb-list">
+                            <ul>
+                                <li><a href="home.html">Home</a></li>
+                             
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+      <!-- BREADCRUMB AREA END -->
+
+      <!--cart-->
+      <div class="liton__shopping-cart-area mb-100">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="shopping-cart-inner">
+                <div class="shopping-cart-table table-responsive">
+                  <table class="table table-bordered">
+                    <thead>
+                      <th class="cart-product-remove">Remove</th>
+                      <th class="cart-product-image">Image</th>
+                      <th class="cart-product-info">Product</th>
+                      <th class="cart-product-price">Price</th>
+                      <th class="cart-product-quantity">Quantity</th>
+                      <th class="cart-product-subtotal">Subtotal</th>
+                    </thead>
+                    <tbody id="cart-items-container">
+                      <!-- Cart items will be injected dynamically here -->
+                    </tbody>
+                  </table>
+                </div>
+                <div class="shoping-cart-total mt-50">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Cart Subtotal</td>
+                        <td id="cart-subtotal">0.00 JD</td>
+                      </tr>
+                      <tr>
+                        <td>Shipping and Handling</td>
+                        <td>5.00 JD</td>
+                      </tr>
+                      <tr>
+                      </tr>
+                      <tr>
+                        <td><strong>Order Total</strong></td>
+                        <td><strong id="order-total">5.00 JD</strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="btn-wrapper text-right">
+                    <button
+                      id="proceedToCheckoutButton"
+                      class="primary-btn"
+                      onclick="proceedToCheckout()"
+                    >
+                      Proceed to Checkout
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- All JS Plugins -->
+
+    <!-- Main JS -->
+
+    <!-- NEWSLETTER -->
+    <div id="newsletter" class="section">
+      <!-- container -->
+      <div class="container">
+        <!-- row -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="newsletter">
+              <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+              <form>
+                <input
+                  class="input"
+                  type="email"
+                  placeholder="Enter Your Email"
+                />
+                <button class="newsletter-btn">
+                  <i class="fa fa-envelope"></i> Subscribe
+                </button>
+              </form>
+              <ul class="newsletter-follow">
+                <li>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-pinterest"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- /container -->
+    </div>
+    <!-- /NEWSLETTER -->
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col payment-options">
+            <img
+              src="/assests/images/wecart.png"
+              alt="WeCart"
+              class="img-fluid"
+            />
+            <img
+              src="/assests/images/apple_pay.png"
+              alt="Apple Pay"
+              class="img-fluid"
+            />
+            <img
+              src="/assests/images/zelle.png"
+              alt="Zelle"
+              class="img-fluid"
+            />
+            <img src="/assests/images/cash.png" alt="Cash" class="img-fluid" />
+            <img
+              src="/assests/images/mastercard.png"
+              alt="MasterCard"
+              class="img-fluid"
+            />
+            <img src="/assests/images/visa.png" alt="Visa" class="img-fluid" />
+            <img
+              src="/assests/images/PayPal.png"
+              alt="PayPal"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+        <ul class="footer-links list-inline mt-3">
+          <li class="list-inline-item"><a href="index.html">Home Page</a></li>
+          <li class="list-inline-item"><a href="about.html">About Us</a></li>
+          <li class="list-inline-item"><a href="#">My Account</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+          <li class="list-inline-item"><a href="#">Delivery</a></li>
+          <li class="list-inline-item"><a href="#">Refund</a></li>
+          <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- jQuery Plugins -->
+    <script src="/assests/js2/jquery.min.js"></script>
+    <script src="/assests/js2/bootstrap.min.js"></script>
+    <script src="/assests/js2/slick.min.js"></script>
+    <script src="/assests/js2/nouislider.min.js"></script>
+    <script src="/assests/js2/jquery.zoom.min.js"></script>
+    <script src="/assests/js2/main.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        loadCartItemsFromLocalStorage(); // Load cart items on page load
+        updateCartCount(); // Update cart count on page load
+      });
+    
+      // Function to load cart items from localStorage and display them
+      function loadCartItemsFromLocalStorage() {
+        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        if (cartItems.length === 0) {
+          displayEmptyCartMessage();
+        } else {
+          displayCartItems(cartItems); // Display the items from localStorage
+        }
+      }
+    
+      // Function to display a message when the cart is empty
+      function displayEmptyCartMessage() {
+        const cartItemsContainer = document.getElementById("cart-items-container");
+        cartItemsContainer.innerHTML = '<tr><td colspan="6">Your cart is empty.</td></tr>';
+      }
+    
+      // Function to display cart items
+      function displayCartItems(items) {
+        const cartItemsContainer = document.getElementById("cart-items-container");
+        cartItemsContainer.innerHTML = ""; // Clear existing items
+        let total = 0;
+    
+        items.forEach((item) => {
+          const quantity = item.Quantity || 1;
+          const price = item.Price;
+          const name = item.Name;
+          const imageUrl = item.ImageUrl;
+          const subtotal = quantity * price;
+          total += subtotal;
+    
+          const cartItemRow = `
+            <tr>
+              <td class="cart-product-remove">
+                <button onclick="removeCartItem('${name}')">x</button>
+              </td>
+              <td class="cart-product-image">
+                <img src="${imageUrl}" alt="${name}" style="width: 50px;">
+              </td>
+              <td class="cart-product-info">${name}</td>
+              <td class="cart-product-price">JD${price.toFixed(2)}</td>
+              <td class="cart-product-quantity">
+                <button onclick="changeQuantity('${name}', -1)">-</button>
+                ${quantity}
+                <button onclick="changeQuantity('${name}', 1)">+</button>
+              </td>
+              <td class="cart-product-subtotal">JD${subtotal.toFixed(2)}</td>
+            </tr>
+          `;
+          cartItemsContainer.innerHTML += cartItemRow;
+        });
+    
+        document.getElementById("cart-subtotal").textContent = `JD${total.toFixed(2)}`;
+        document.getElementById("order-total").textContent = `JD${(total + 5).toFixed(2)}`;
+      }
+    
+      // Function to change the quantity of an item
+      function changeQuantity(itemName, change) {
+        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        const item = cartItems.find((i) => i.Name === itemName);
+        if (item) {
+          item.Quantity += change;
+          if (item.Quantity <= 0) {
+            const index = cartItems.indexOf(item);
+            cartItems.splice(index, 1); // Remove item if quantity is 0 or less
+          }
+          localStorage.setItem("cartItems", JSON.stringify(cartItems));
+          loadCartItemsFromLocalStorage();
+          updateCartCount(); // Update cart count
+        }
+      }
+    
+      // Function to remove an item from the cart
+      function removeCartItem(itemName) {
+        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        const updatedCartItems = cartItems.filter((item) => item.Name !== itemName);
+        localStorage.setItem("cartItems", JSON.stringify(updatedCartItems));
+        loadCartItemsFromLocalStorage();
+        updateCartCount(); // Update cart count
+      }
+    
+      // Function to update the cart item count in the UI
+      function updateCartCount() {
+        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        const cartCount = cartItems.reduce((total, item) => total + item.Quantity, 0);
+        const cartCountElement = document.querySelector(".cart-icon .qty");
+        if (cartCountElement) {
+          cartCountElement.textContent = cartCount; // Update the displayed count
+        }
+      }
+    
+      // Function to proceed to the checkout page
+      function proceedToCheckout() {
+        const cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+        if (cartItems.length === 0) {
+          alert("No items in the cart to proceed to checkout.");
+          return;
+        }
+    
+        const checkoutItems = cartItems.map((item) => ({
+          ProductId: item.ProductId,
+          quantity: item.Quantity,
+          name: item.Name,
+          subtotal: (item.Quantity * item.Price).toFixed(2),
+        }));
+    
+        localStorage.setItem("checkoutItems", JSON.stringify(checkoutItems));
+        window.location.href = "checkout.html";
+      }
+    
+      // Attach event listener to the "Proceed to Checkout" button
+      document
+        .getElementById("proceed-to-checkout-button")
+        .addEventListener("click", proceedToCheckout);
+    </script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/673c47174304e3196ae4e3a2/1id1nbd9c';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+    
+    <script src="sharedjs.js"></script>
+  </body>
+
+  <!-- Mirrored from tunatheme.com/tf/html/fiama-preview/fiama/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Sep 2024 12:05:13 GMT -->
+</html>

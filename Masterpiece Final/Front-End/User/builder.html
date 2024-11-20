@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
+		<link rel="icon" type="image/png" href="/assests/images/icons/favicon.png"/>
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+	
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="/assests/css2/bootstrap.min.css"/>
+	
+		<!-- Slick -->
+		<link type="text/css" rel="stylesheet" href="/assests/css2/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="/assests/css2/slick-theme.css"/>
+	
+		<!-- nouislider -->
+		<link type="text/css" rel="stylesheet" href="/assests/css2/nouislider.min.css"/>
+	
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+		<!-- Custom stylesheet -->
+		<link type="text/css" rel="stylesheet" href="/assests/css2/style.css"/>
+	<!-- Font Awesome Icon -->
+    <link type="text/css" rel="stylesheet" href="/assests/css2/home.css"/>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<style>
+    /* Basic styles for the layout */
+    #categories-container {
+      display: flex;
+      margin-top:2%;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .category-dropdown {
+      flex: 1 1 300px;
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+      margin-bottom: 5px;
+      display: block;
+    }
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #f51818;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 2%;
+
+    }
+    button:hover {
+      background-color: #b30003;
+
+   
+    }
+  </style>
+	
+	</head>
+	<body>
+		 <!-- HEADER -->
+		 <header>
+			<div id="top-header">
+			  <div class="container">
+				<ul class="header-links pull-left">
+				  <li>
+					<a href="#"><i class="fa fa-phone"></i> +962772382250</a>
+				  </li>
+				  <li>
+					<a href="#"><i class="fa fa-envelope-o"></i> Info@WeCart.com</a>
+				  </li>
+				  <li>
+					<a href="#"><i class="fa fa-map-marker"></i> 21110 Irbid</a>
+				  </li>
+				</ul>
+				<ul class="header-links pull-right">
+				  <li>
+					<a href="#"><i class="fa fa-language"></i> EN/AR</a>
+				  </li>
+				  <li>
+					<a href="#" id="accountBtn"
+					  ><i class="fa fa-user-o"></i>
+					  <span id="accountText">My Account</span></a
+					>
+				  </li>
+				  <li id="logoutBtn" style="display: none">
+					<a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+			<div id="header">
+			  <div class="container">
+				<div class="row">
+				  <div class="col-md-3">
+					<div class="header-logo">
+					  <a href="#" class="logo">
+						<img src="/assests/img/logo.png" alt="" />
+					  </a>
+					</div>
+				  </div>
+				  <div class="col-md-6">
+					
+				  </div>
+				  <div class="col-md-3 clearfix">
+					<div class="header-ctn">
+					 
+					  <div class="cart-icon">
+						<a href="shopping-cart.html">
+						  <i class="fa fa-shopping-cart"></i>
+						  <span>Your Cart</span>
+						  <div class="qty">0</div>
+						  <!-- Initially set to 0 or fetch from server -->
+						</a>
+					  </div>
+	  
+					  <div class="menu-toggle">
+						<a href="#">
+						  <i class="fa fa-bars"></i>
+						  <span>Menu</span>
+						</a>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </header>
+		  <!-- /HEADER -->
+	  
+		 <!-- NAVIGATION -->
+			  <nav id="navigation">
+				  <div class="container">
+					  <div id="responsive-nav">
+						  <ul class="main-nav nav navbar-nav">
+							  <li class="active"><a href="home.html">Home</a></li>
+							  <li><a href="products.html">Categories</a></li>
+							  <!-- <li><a href="wishlist.html">Wishlist</a></li> -->
+							  
+							  <li><a href="/contactus/contact.html">Contact</a></li>
+							  <li><a href="/Aboutus/about.html">About</a></li>
+						  </ul>
+					  </div>
+				  </div>
+			  </nav>
+			  <!-- /NAVIGATION -->
+    <!-- Container for category dropdowns -->
+    <div id="categories-container"></div>
+
+    <div id="total-amount" class="mt-3 mb-3" style="font-weight: bold;">Total Amount: 0.00 JD</div>
+
+    <button onclick="addAllToCart()" class="add-all-to-cart-btn">
+        <i class="fa fa-shopping-cart"></i> Add All to Cart
+    </button>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+<!-- NEWSLETTER -->
+<div id="newsletter" class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="newsletter">
+                    <p>Sign Up for the <strong>NEWSLETTER</strong></p>
+                    <form>
+                        <input class="input" type="email" placeholder="Enter Your Email">
+                        <button class="newsletter-btn"><i class="fa fa-envelope"></i> Subscribe</button>
+                    </form>
+                    <ul class="newsletter-follow">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /NEWSLETTER -->
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-4">
+<div class="container text-center">
+    <div class="row">
+        <div class="col payment-options">
+            <img src="/assests/images/wecart.png" alt="WeCart" class="img-fluid">
+            <img src="/assests/images/apple_pay.png" alt="Apple Pay" class="img-fluid">
+            <img src="/assests/images/zelle.png" alt="Zelle" class="img-fluid">
+            <img src="/assests/images/cash.png" alt="Cash" class="img-fluid">
+            <img src="/assests/images/mastercard.png" alt="MasterCard" class="img-fluid">
+            <img src="/assests/images/visa.png" alt="Visa" class="img-fluid">
+            <img src="/assests/images/PayPal.png" alt="PayPal" class="img-fluid">
+        </div>
+    </div>
+    <ul class="footer-links list-inline mt-3">
+        <li class="list-inline-item"><a href="index.html">Home Page</a></li>
+        <li class="list-inline-item"><a href="about.html">About Us</a></li>
+        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+        <li class="list-inline-item"><a href="#">Delivery</a></li>
+        <li class="list-inline-item"><a href="#">Refund</a></li>
+        <li class="list-inline-item"><a href="#">Terms & Conditions</a></li>
+    </ul>
+</div>
+</footer>
+<!-- /FOOTER -->
+
+
+
+<!-- jQuery Plugins -->
+<script src="/assests/js2/jquery.min.js"></script>
+    <script src="/assests/js2/bootstrap.min.js"></script>
+    <script src="/assests/js2/slick.min.js"></script>
+    <script src="/assests/js2/nouislider.min.js"></script>
+    <script src="/assests/js2/jquery.zoom.min.js"></script>
+    <script src="/assests/js2/main.js"></script>
+
+</body>
+<script>
+// Base URL of your API
+const baseUrl = 'https://localhost:7159/api'; // Adjust to your actual API URL
+let selectedProducts = []; // Array to store selected products
+
+// Function to fetch all categories
+async function fetchCategories() {
+  try {
+    const response = await fetch(`${baseUrl}/Categories`);
+    if (!response.ok) throw new Error('Failed to fetch categories');
+    const categories = await response.json();
+    createCategoryDropdowns(categories);
+  } catch (error) {
+    console.error('Error fetching categories:', error);
+  }
+}
+
+// Function to create dropdowns for categories and fetch products for each category
+function createCategoryDropdowns(categories) {
+  const container = document.getElementById('categories-container');
+  container.innerHTML = ''; // Clear existing content
+
+  // Create a row to hold the dropdowns
+  const row = document.createElement('div');
+  row.className = 'row'; // Use Bootstrap's row class
+
+  categories.forEach(category => {
+    // Create a column for each category dropdown
+    const col = document.createElement('div');
+    col.className = 'col-md-4 mb-3'; // Bootstrap column classes
+
+    // Create the dropdown HTML
+    col.innerHTML = `
+      <label for="category-${category.categoryId}">${category.name}</label>
+      <select id="category-${category.categoryId}" class="form-control" onchange="onProductSelected(${category.categoryId}, this)">
+        <option value="">Select a product</option>
+      </select>
+    `;
+
+    // Append the column to the row
+    row.appendChild(col);
+
+    // Fetch products for this category and populate the dropdown
+    fetchProducts(category.categoryId, col.querySelector('select'));
+  });
+
+  // Append the row to the container
+  container.appendChild(row);
+}
+
+// Function to fetch products for a given category and populate the dropdown
+async function fetchProducts(categoryId, dropdown) {
+  try {
+    const response = await fetch(`${baseUrl}/Products/ByCategoryId/${categoryId}`);
+    if (!response.ok) throw new Error('Failed to fetch products');
+    const products = await response.json();
+
+    // Populate the dropdown with products
+    products.forEach(product => {
+      const option = document.createElement('option');
+      option.value = JSON.stringify(product); // Store the product object as JSON string
+      option.textContent = `${product.name} - ${product.price} JD`;
+      dropdown.appendChild(option);
+    });
+  } catch (error) {
+    console.error(`Error fetching products for category ${categoryId}:`, error);
+  }
+}
+
+// Function to store the selected product in the array and update the total amount
+function onProductSelected(categoryId, dropdown) {
+  const selectedProduct = dropdown.value ? JSON.parse(dropdown.value) : null;
+
+  // Check if the product is already selected and remove it if it is
+  selectedProducts = selectedProducts.filter(product => product.categoryId !== categoryId);
+
+  // Add the newly selected product to the array
+  if (selectedProduct) {
+    selectedProduct.categoryId = categoryId; // Add the categoryId to the product for reference
+    selectedProducts.push(selectedProduct);
+  }
+
+  // Update the total amount
+  updateTotalAmount();
+}
+
+// Function to calculate and display the total amount
+function updateTotalAmount() {
+  const totalAmount = selectedProducts.reduce((total, product) => total + product.price, 0);
+  document.getElementById('total-amount').textContent = `Total Amount: ${totalAmount.toFixed(2)} JD`;
+}
+
+// Function to add all selected products to the cart
+function addAllToCart() {
+  const userId = localStorage.getItem("userId");
+  if (!userId) {
+    Swal.fire("You must be logged in to add items to the cart.", "", "error");
+    return;
+  }
+
+  if (selectedProducts.length === 0) {
+    Swal.fire("No products selected.", "", "error");
+    return;
+  }
+
+  // Add each product to the cart
+  selectedProducts.forEach(product => {
+    const cartData = {
+      ProductId: product.productId,
+      UserId: parseInt(userId),
+      Quantity: 1,
+    };
+
+    fetch("https://localhost:7159/api/Cart/CreateNewCartItem", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(cartData),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to add item to cart.");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        Swal.fire(data.msg || "Items added to cart successfully!", "", "success");
+        updateCartUI(product.name, product.price); // Update the cart UI
+      })
+      .catch((error) => {
+        console.error("Error adding item to cart:", error);
+        Swal.fire("Failed to add item to cart.", error.message, "error");
+      });
+  });
+}
+
+// Function to update the cart UI (without images)
+function updateCartUI(name, price) {
+  const cartItemsContainer = document.getElementById('cart-items');
+  if (!cartItemsContainer) {
+    console.error("Cart items container not found");
+    return;
+  }
+
+  const listItem = document.createElement('li');
+  listItem.innerHTML = `<strong>${name}</strong> - ${price.toFixed(2)} JD`;
+  cartItemsContainer.appendChild(listItem);
+}
+
+// Fetch categories on page load
+fetchCategories();
+
+
+</script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/673c47174304e3196ae4e3a2/1id1nbd9c';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+<script src="sharedjs.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

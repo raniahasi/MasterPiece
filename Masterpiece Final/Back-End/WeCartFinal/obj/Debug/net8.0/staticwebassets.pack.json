@@ -1,0 +1,385 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\1714b149-a78d-4cc9-a661-f48aad334158.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1714b149-a78d-4cc9-a661-f48aad334158.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\1c912c7d-6fa3-45f0-b5a2-674180b163c1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1c912c7d-6fa3-45f0-b5a2-674180b163c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\5006d0cf-5602-4d3b-849c-9d31552ca823.png",
+      "PackagePath": "staticwebassets\\uploads\\5006d0cf-5602-4d3b-849c-9d31552ca823.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\51b8a0f4-2c88-4e15-94e7-c0b79b64b475.png",
+      "PackagePath": "staticwebassets\\uploads\\51b8a0f4-2c88-4e15-94e7-c0b79b64b475.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\704c651d-6116-4165-b043-ce251d0ee640.jpg",
+      "PackagePath": "staticwebassets\\uploads\\704c651d-6116-4165-b043-ce251d0ee640.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\9fa8fd6f-2c74-4a97-9bf5-2835abcb2378.jpg",
+      "PackagePath": "staticwebassets\\uploads\\9fa8fd6f-2c74-4a97-9bf5-2835abcb2378.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\0.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\055ec877-66bc-477d-af64-abdfa32b12b7.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\055ec877-66bc-477d-af64-abdfa32b12b7.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\13497733-3371-4a25-8cf0-84d7c1316e7f.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\13497733-3371-4a25-8cf0-84d7c1316e7f.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\16e6a14f-2221-4c13-8d5a-4748507464b7.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\16e6a14f-2221-4c13-8d5a-4748507464b7.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\18e99757-ce29-4715-9bfa-9e3799477ae9.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\18e99757-ce29-4715-9bfa-9e3799477ae9.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\19757b31-0c00-40ef-8df0-a67fc9f4bd79.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\19757b31-0c00-40ef-8df0-a67fc9f4bd79.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\1c0c59d4-2f03-4045-b3c5-8e0934da0936.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\1c0c59d4-2f03-4045-b3c5-8e0934da0936.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\209789d6-1eb0-4aa8-9e5b-c57c9173110d.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\209789d6-1eb0-4aa8-9e5b-c57c9173110d.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\23d8c580-3af6-434c-ae0c-649d5460cba4.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\23d8c580-3af6-434c-ae0c-649d5460cba4.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\269af499-4f61-4fc4-96d5-0e0191b8ae9e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\269af499-4f61-4fc4-96d5-0e0191b8ae9e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\2f3762eb-7395-472c-bd3e-4cfdc8893e88.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\2f3762eb-7395-472c-bd3e-4cfdc8893e88.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\3a123e54-859d-4cf4-b908-0c47ad529fd5.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\3a123e54-859d-4cf4-b908-0c47ad529fd5.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\3f31f998-63e7-4cd9-84d6-315fb2b0bf0a.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\3f31f998-63e7-4cd9-84d6-315fb2b0bf0a.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\40496c6a-9bbe-4f9b-ba91-1bd5edc88202.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\40496c6a-9bbe-4f9b-ba91-1bd5edc88202.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\4070tis_.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\4070tis_.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\40f55422-8e2d-4410-9559-cfc1569f9bee.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\40f55422-8e2d-4410-9559-cfc1569f9bee.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\4719a7a5-818a-4fdd-9692-2650520be0f5.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\4719a7a5-818a-4fdd-9692-2650520be0f5.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\4c998956-8815-4e4b-b099-157317bc72fc.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\4c998956-8815-4e4b-b099-157317bc72fc.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\51d63c68-8c52-4b7f-a436-d772d6c5e234.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\51d63c68-8c52-4b7f-a436-d772d6c5e234.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\52f0a822-cc0d-4090-b7a1-75d59c3d6160.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\52f0a822-cc0d-4090-b7a1-75d59c3d6160.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\5bac6364-6201-4785-8b8b-0397e24d9d3e.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\5bac6364-6201-4785-8b8b-0397e24d9d3e.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\5c48687c-eedb-4580-b3cd-ed2d9bd68fc8.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\5c48687c-eedb-4580-b3cd-ed2d9bd68fc8.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\61eEjFI5KRL._AC_SL1500_-510x510.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\61eEjFI5KRL._AC_SL1500_-510x510.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\62e35770-45f5-49c4-a9bc-a147ce034993.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\62e35770-45f5-49c4-a9bc-a147ce034993.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\6940dbbb-b2e9-4be2-9c11-e1e9a58f0856.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\6940dbbb-b2e9-4be2-9c11-e1e9a58f0856.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\6fa8cf2d-ae75-4ad0-abf9-dca29e59cad0.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\6fa8cf2d-ae75-4ad0-abf9-dca29e59cad0.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\7440a667-22cc-4816-a01a-bfab7c935218.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\7440a667-22cc-4816-a01a-bfab7c935218.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\8a0dd49b-f6c9-477d-b61b-e01bb3501102.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\8a0dd49b-f6c9-477d-b61b-e01bb3501102.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\98c6c22f-2935-4e4e-8908-e8d58edf4268.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\98c6c22f-2935-4e4e-8908-e8d58edf4268.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\998728bf-140e-4b3b-92ec-5d0fcddc9494.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\998728bf-140e-4b3b-92ec-5d0fcddc9494.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\9d324472-e316-4da8-b310-dd8a8f376ad1.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\9d324472-e316-4da8-b310-dd8a8f376ad1.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\ASUS-ROG-STRIX-X870-A-1-510x510.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\ASUS-ROG-STRIX-X870-A-1-510x510.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\K552-BB-2_450x450.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\K552-BB-2_450x450.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\Lian-Li-Hydroshift_2.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\Lian-Li-Hydroshift_2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\a1ffa748-dae0-4cfc-8397-957c901e799d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\a1ffa748-dae0-4cfc-8397-957c901e799d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\a2a2420d-42a2-4805-a145-0ec8f78473bb.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\a2a2420d-42a2-4805-a145-0ec8f78473bb.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\aac49780-c52f-45d6-ae1e-90b99f8cfa7d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\aac49780-c52f-45d6-ae1e-90b99f8cfa7d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\ad6f559f-aa47-4d79-966c-9b2a67f9a203.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\ad6f559f-aa47-4d79-966c-9b2a67f9a203.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\amd_ryzen_5_5500_procesador_001_l_1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\amd_ryzen_5_5500_procesador_001_l_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\b4abbb26-aa0a-4ee6-925a-c062d37d28ea.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\b4abbb26-aa0a-4ee6-925a-c062d37d28ea.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\benefits-of-getting-a-puppy-900x600.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\benefits-of-getting-a-puppy-900x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\c3981945-5644-4ffb-ba96-7bcad58c3ed9.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\c3981945-5644-4ffb-ba96-7bcad58c3ed9.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\c48d9543-e763-44c0-b8f7-646561c3b93b.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\c48d9543-e763-44c0-b8f7-646561c3b93b.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\cefa082b-d21c-47c3-9df2-d44038039847.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\cefa082b-d21c-47c3-9df2-d44038039847.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\classic-cheese-pizza-FT-RECIPE0422-31a2c938fc2546c9a07b7011658cfd05.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\cmh32gx5m2b6200c36w.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\cmh32gx5m2b6200c36w.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\core-ultra-9.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\core-ultra-9.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\cure-ultre-5-510x510.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\cure-ultre-5-510x510.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\d0f1de99-592e-4ff6-9581-ef834ff5e285.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\d0f1de99-592e-4ff6-9581-ef834ff5e285.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\d3672ee5-7b18-439d-8348-3227dbf725a9.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\d3672ee5-7b18-439d-8348-3227dbf725a9.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\d3c8e3e1-b264-4689-ab38-571c69e54ad9.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\d3c8e3e1-b264-4689-ab38-571c69e54ad9.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\d4f8da46-6ad5-4a06-8886-2978c8584be5.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\d4f8da46-6ad5-4a06-8886-2978c8584be5.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\d8a67414-f888-4dca-ac83-0853e0e8c2d7.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\d8a67414-f888-4dca-ac83-0853e0e8c2d7.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\d9ad816b-7fb2-451d-81cf-58fd3f7c92bc.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\d9ad816b-7fb2-451d-81cf-58fd3f7c92bc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\de167a45-e31a-4790-a398-c5a914673d63.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\de167a45-e31a-4790-a398-c5a914673d63.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\df96a0f7-63b6-40e3-a28e-6ff457c37544.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\df96a0f7-63b6-40e3-a28e-6ff457c37544.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\e10dddd8-e080-4795-9167-0e7ee00de17b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\e10dddd8-e080-4795-9167-0e7ee00de17b.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\e4e67e00-0793-415f-8ffd-4c0abf609b71.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\e4e67e00-0793-415f-8ffd-4c0abf609b71.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\e5825e8e-9361-4723-8f0d-8747172c004f.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\e5825e8e-9361-4723-8f0d-8747172c004f.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\eedc7f3a-79b3-4307-b2ea-83782e460e06.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\eedc7f3a-79b3-4307-b2ea-83782e460e06.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\f3cb6500-87cf-43a4-b658-93a55e0915a2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\f3cb6500-87cf-43a4-b658-93a55e0915a2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\f3f8e21f-7480-4c62-ad8b-958cdbba08f5.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\images\\f3f8e21f-7480-4c62-ad8b-958cdbba08f5.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\f41094ed-5499-4489-9f16-ac8746e255e3.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\f41094ed-5499-4489-9f16-ac8746e255e3.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\fwebp-2-510x510.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\fwebp-2-510x510.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\gamin_pc.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\gamin_pc.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\gaming_desks.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\gaming_desks.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\gamingpcpro1.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\gamingpcpro1.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\hxc33.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\hxc33.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\hyte40_wh_.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\hyte40_wh_.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\images.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\images\\images.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\images.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\images.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\mice.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\mice.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\mm830_gallery_002-image-510x510.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\mm830_gallery_002-image-510x510.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\nn.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\nn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\pdp-gallery-a10-black-01-new-533x400.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\pdp-gallery-a10-black-01-new-533x400.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\product06.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\product06.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\ps.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\ps.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\ram.png",
+      "PackagePath": "staticwebassets\\uploads\\images\\ram.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\ssd.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\ssd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\ssd2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\ssd2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\w4-510x510.jpg",
+      "PackagePath": "staticwebassets\\uploads\\images\\w4-510x510.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\white-setup.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\white-setup.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\wj.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\wj.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\z890f_-510x510.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\z890f_-510x510.webp"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Masterpiece Final\\Back-End\\WeCartFinal\\wwwroot\\uploads\\images\\zt-d40720q-10m-image01.webp",
+      "PackagePath": "staticwebassets\\uploads\\images\\zt-d40720q-10m-image01.webp"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WeCartFinal.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WeCartFinal.props",
+      "PackagePath": "build\\WeCartFinal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WeCartFinal.props",
+      "PackagePath": "buildMultiTargeting\\WeCartFinal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WeCartFinal.props",
+      "PackagePath": "buildTransitive\\WeCartFinal.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
